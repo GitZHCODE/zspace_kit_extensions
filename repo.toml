@@ -8,10 +8,10 @@
 import_configs = ["${root}/_repo/deps/repo_kit_tools/kit-template/repo.toml"]
 
 # Repository Name
-name = "kit-extension-template-cpp"
+name = "zspace_kit_extensions"
 
 [repo_build]
-msbuild.vs_version = "vs2019"
+msbuild.vs_version = "vs2022"
 post_build.commands = []
 licensing.enabled = false
 fetch.pip.licensing_enabled = false
@@ -20,7 +20,7 @@ fetch.pip.licensing_enabled = false
 enabled = false
 
 [repo_docs]
-name = "Kit Extension Template C++"
+name = "zspace_kit_extensions"
 project = "kit-extension-template-cpp"
 api_output_directory = "api"
 use_fast_doxygen_conversion=false

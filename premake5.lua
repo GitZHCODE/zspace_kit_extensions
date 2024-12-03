@@ -5,8 +5,8 @@ repo_build = require("omni/repo/build")
 root = repo_build.get_abs_path(".")
 
 -- Set the desired MSVC, WINSDK, and MSBUILD versions before executing the kit template premake configuration.
-MSVC_VERSION = "14.27.29110"
-WINSDK_VERSION = "10.0.18362.0"
+MSVC_VERSION = "19.40.33808"
+WINSDK_VERSION = "10.0.22621.0"
 MSBUILD_VERSION = "Current"
 
 -- Execute the kit template premake configuration, which creates the solution, finds extensions, etc.
