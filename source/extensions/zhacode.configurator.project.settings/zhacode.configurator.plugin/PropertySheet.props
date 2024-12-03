@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <zspaceDeployDir>C:\Users\Taizhong.Chen\source\repos\GitZHCODE\zspace_alice\ALICE_PLATFORM\src\zspace</zspaceDeployDir>
+    <aliceEXEDir>C:\Users\Taizhong.Chen\source\repos\GitZHCODE\zspace_alice\ALICE_PLATFORM\x64\Release\EXE</aliceEXEDir>
+    <iglIncludeDir>C:\Users\Taizhong.Chen\source\repos\GitZHCODE\zspace_toolsets\cpp\depends\igl\headers</iglIncludeDir>
+    <iglBuildDir>C:\Users\Taizhong.Chen\source\repos\GitZHCODE\zspace_toolsets\cpp\depends\igl\build</iglBuildDir>
+    <zspacecoreDir>C:\Users\Taizhong.Chen\source\repos\GitZHCODE\zspace_core</zspacecoreDir>
+    <zspacetoolsetsDir>C:\Users\Taizhong.Chen\source\repos\GitZHCODE\zspace_toolsets</zspacetoolsetsDir>
+    <zSpaceCoreLibDir>C:\Users\Taizhong.Chen\source\repos\GitZHCODE\zspace_external\cpp\depends\zSpaceCore</zSpaceCoreLibDir>
+    <zSpaceToolsetsLibDir>C:\Users\Taizhong.Chen\source\repos\GitZHCODE\zspace_external\cpp\depends\zSpaceToolset</zSpaceToolsetsLibDir>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="zspaceDeployDir">
+      <Value>$(zspaceDeployDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="aliceEXEDir">
+      <Value>$(aliceEXEDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="iglIncludeDir">
+      <Value>$(iglIncludeDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="iglBuildDir">
+      <Value>$(iglBuildDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="zspacecoreDir">
+      <Value>$(zspacecoreDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="zspacetoolsetsDir">
+      <Value>$(zspacetoolsetsDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="zSpaceCoreLibDir">
+      <Value>$(zSpaceCoreLibDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="zSpaceToolsetsLibDir">
+      <Value>$(zSpaceToolsetsLibDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

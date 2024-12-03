@@ -11,15 +11,27 @@ keywords = ["app"] # Makes this browsable in the UI under the "experience" filte
 "omni.kit.viewport.bundle" = {}
 "omni.kit.viewport.rtx" = {}
 "omni.kit.window.extensions" = {}
-"omni.kit.window.file" = {}
+#"omni.kit.window.file" = {}
+#"omni.kit.menu.file" = {}
+"omni.kit.menu.edit" = {}
 "omni.kit.window.toolbar" = {}
+"omni.kit.window.stage" = {}
+
+"omni.app.dev" = {}
 
 [settings]
 app.content.emptyStageOnStart = true
-app.exts.folders.'++' = ["${app}/../exts"] # Make extensions from this repo available.
 app.window.title = "ZSPACE Viewport"
 app.window.width = 1700
 app.window.height = 900
+app.fastShutdown = true
+
 
 [[test]]
 enabled = false
+
+[settings.app.exts]
+#app.exts.folders.'++' = ["${app}/../ZHACODE.Data.Visualization/"]
+#app.exts.folders.'++' = ["${app}/../omni.example.cpp.hello_world/"]
+#app.exts.folders.'++' = ["${app}/../omni.example.cpp.usd.plugin/"]
+#app.exts.folders.'++' = ["${app}/../exts"] # Make extensions from this repo available to kit.

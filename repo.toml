@@ -11,7 +11,7 @@ import_configs = ["${root}/_repo/deps/repo_kit_tools/kit-template/repo.toml"]
 name = "zspace_kit_extensions"
 
 [repo_build]
-msbuild.vs_version = "vs2022"
+msbuild.vs_version = "vs2019"
 post_build.commands = []
 licensing.enabled = false
 fetch.pip.licensing_enabled = false

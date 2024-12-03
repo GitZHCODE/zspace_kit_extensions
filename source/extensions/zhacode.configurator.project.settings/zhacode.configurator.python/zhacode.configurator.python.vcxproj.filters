@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_repo">
+      <UniqueIdentifier>{BA57F60E-266C-1EC0-EFED-C11F5BC11AF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_repo\deps">
+      <UniqueIdentifier>{154EEF7E-0106-31CC-6A0D-0A2856E4CBBC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_repo\deps\repo_kit_tools">
+      <UniqueIdentifier>{518C3516-BD4E-69A0-06FF-F72C7200427E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_repo\deps\repo_kit_tools\kit-template">
+      <UniqueIdentifier>{F15DFE1F-DDAF-D50F-C6CE-1220B2BFEEF8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\extensions\zhacode.configurator\bindings\python\zhacode.configurator\ExampleUsdBindings.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\_repo\deps\repo_kit_tools\kit-template\.editorconfig">
+      <Filter>_repo\deps\repo_kit_tools\kit-template</Filter>
+    </None>
+    <None Include="..\..\..\source\extensions\zhacode.configurator\bindings\python\zhacode.configurator\__init__.py">
+      <Filter>src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

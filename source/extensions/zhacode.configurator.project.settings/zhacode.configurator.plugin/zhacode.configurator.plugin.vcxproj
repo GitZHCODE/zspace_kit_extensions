@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_zspace|x64">
+      <Configuration>release_zspace</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{613C1DB3-CD49-4B99-5630-4784C23C1750}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>zhacode.configurator.plugin</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_zspace|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_zspace|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\_build\windows-x86_64\debug\exts\zhacode.configurator\bin\</OutDir>
+    <IntDir>..\..\..\_build\intermediate\windows-x86_64\zhacode.configurator.plugin\x86_64\debug\</IntDir>
+    <TargetName>zhacode.configurator.plugin</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>..\..\..\_build\host-deps\msvc\VC\Tools\MSVC\14.27.29110\include;..\..\..\_build\host-deps\winsdk\include\winrt;..\..\..\_build\host-deps\winsdk\include\um;..\..\..\_build\host-deps\winsdk\include\ucrt;..\..\..\_build\host-deps\winsdk\include\shared;..\..\..\_build\target-deps\usd\debug\include;..\..\..\_build\target-deps\usd\debug\include\boost;..\..\..\_build\target-deps\python\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\_build\host-deps\msvc\VC\Tools\MSVC\14.27.29110\lib\onecore\x64;..\..\..\_build\host-deps\winsdk\lib\ucrt\x64;..\..\..\_build\host-deps\winsdk\lib\um\x64;..\..\..\_build\target-deps\python\libs;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ProjectDir)..\..\..\_build\host-deps\msvc\VC\Tools\MSVC\14.27.29110\bin\HostX64\x64;$(ProjectDir)..\..\..\_build\host-deps\msvc\MSBuild\Current\bin;$(ProjectDir)..\..\..\_build\host-deps\winsdk\bin\x64;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\_build\windows-x86_64\release\exts\zhacode.configurator\bin\</OutDir>
+    <IntDir>..\..\..\_build\intermediate\windows-x86_64\zhacode.configurator.plugin\x86_64\release\</IntDir>
+    <TargetName>zhacode.configurator.plugin</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>..\..\..\_build\host-deps\msvc\VC\Tools\MSVC\14.27.29110\include;..\..\..\_build\host-deps\winsdk\include\winrt;..\..\..\_build\host-deps\winsdk\include\um;..\..\..\_build\host-deps\winsdk\include\ucrt;..\..\..\_build\host-deps\winsdk\include\shared;..\..\..\_build\target-deps\usd\release\include;..\..\..\_build\target-deps\usd\release\include\boost;..\..\..\_build\target-deps\python\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\_build\host-deps\msvc\VC\Tools\MSVC\14.27.29110\lib\onecore\x64;..\..\..\_build\host-deps\winsdk\lib\ucrt\x64;..\..\..\_build\host-deps\winsdk\lib\um\x64;..\..\..\_build\target-deps\python\libs;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ProjectDir)..\..\..\_build\host-deps\msvc\VC\Tools\MSVC\14.27.29110\bin\HostX64\x64;$(ProjectDir)..\..\..\_build\host-deps\msvc\MSBuild\Current\bin;$(ProjectDir)..\..\..\_build\host-deps\winsdk\bin\x64;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_zspace|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\_build\windows-x86_64\release\exts\zhacode.configurator\bin\</OutDir>
+    <IntDir>..\..\..\_build\intermediate\windows-x86_64\zhacode.configurator.plugin\x86_64\release\</IntDir>
+    <TargetName>zhacode.configurator.plugin</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>..\..\..\_build\host-deps\msvc\VC\Tools\MSVC\14.27.29110\include;..\..\..\_build\host-deps\winsdk\include\winrt;..\..\..\_build\host-deps\winsdk\include\um;..\..\..\_build\host-deps\winsdk\include\ucrt;..\..\..\_build\host-deps\winsdk\include\shared;..\..\..\_build\target-deps\usd\release\include;..\..\..\_build\target-deps\usd\release\include\boost;..\..\..\_build\target-deps\python\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\_build\host-deps\msvc\VC\Tools\MSVC\14.27.29110\lib\onecore\x64;..\..\..\_build\host-deps\winsdk\lib\ucrt\x64;..\..\..\_build\host-deps\winsdk\lib\um\x64;..\..\..\_build\target-deps\python\libs;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ProjectDir)..\..\..\_build\host-deps\msvc\VC\Tools\MSVC\14.27.29110\bin\HostX64\x64;$(ProjectDir)..\..\..\_build\host-deps\msvc\MSBuild\Current\bin;$(ProjectDir)..\..\..\_build\host-deps\winsdk\bin\x64;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>DEBUG;OMNI_COMPILE_AS_MODULE;BOOST_ALL_DYN_LINK;NV_USD;TBB_USE_DEBUG=1;NOMINMAX;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\_build\target-deps;..\..\..\_build\target-deps\carb_sdk_plugins\include;..\..\..\_build\windows-x86_64\debug\kit\dev\include;..\..\..\source\extensions\zhacode.configurator\include;..\..\..\source\extensions\zhacode.configurator\plugins\zhacode.configurator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 /bigobj /permissive- /external:W0 /external:Ic:/Users/Taizhong.Chen/source/repos/zViewerOV/_build/target-deps/usd/debug/include /external:Ic:/Users/Taizhong.Chen/source/repos/zViewerOV/_build/target-deps/usd/debug/include/boost /wd4244 /wd4305 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <SupportJustMyCode>false</SupportJustMyCode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>python310.lib;ar.lib;arch.lib;gf.lib;plug.lib;sdf.lib;tf.lib;usd.lib;vt.lib;usdGeom.lib;usdUtils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\_build\target-deps\carb_sdk_plugins\_build\windows-x86_64\debug;..\..\..\_build\windows-x86_64\debug\kit\plugins;..\..\..\_build\target-deps\usd\debug\lib;..\..\..\_build\target-deps\usd\release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\..\..\_build\windows-x86_64\debug\exts\zhacode.configurator\bin\zhacode.configurator.plugin.lib</ImportLibrary>
+      <AdditionalOptions>/Brepro /sourcelink:$(IntDir)sourcelink.json %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>OMNI_COMPILE_AS_MODULE;BOOST_ALL_DYN_LINK;NV_USD;TBB_USE_DEBUG=0;NOMINMAX;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\_build\target-deps;..\..\..\_build\target-deps\carb_sdk_plugins\include;..\..\..\_build\windows-x86_64\release\kit\dev\include;..\..\..\source\extensions\zhacode.configurator\include;..\..\..\source\extensions\zhacode.configurator\plugins\zhacode.configurator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 /bigobj /permissive- /external:W0 /external:Ic:/Users/Taizhong.Chen/source/repos/zViewerOV/_build/target-deps/usd/release/include /external:Ic:/Users/Taizhong.Chen/source/repos/zViewerOV/_build/target-deps/usd/release/include/boost /wd4244 /wd4305 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <SupportJustMyCode>false</SupportJustMyCode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>python310.lib;ar.lib;arch.lib;gf.lib;plug.lib;sdf.lib;tf.lib;usd.lib;vt.lib;usdGeom.lib;usdUtils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\_build\target-deps\carb_sdk_plugins\_build\windows-x86_64\release;..\..\..\_build\windows-x86_64\release\kit\plugins;..\..\..\_build\target-deps\usd\release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\..\..\_build\windows-x86_64\release\exts\zhacode.configurator\bin\zhacode.configurator.plugin.lib</ImportLibrary>
+      <AdditionalOptions>/Brepro /sourcelink:$(IntDir)sourcelink.json %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_zspace|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>OMNI_COMPILE_AS_MODULE;BOOST_ALL_DYN_LINK;NV_USD;TBB_USE_DEBUG=0;NOMINMAX;NDEBUG;_HAS_EXCEPTIONS=0;ZSPACE_MAYA_INTEROP;ZSPACE_USD_INTEROP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\_build\target-deps;..\..\..\_build\target-deps\carb_sdk_plugins\include;..\..\..\_build\windows-x86_64\release\kit\dev\include;..\..\..\source\extensions\zhacode.configurator\include;..\..\..\source\extensions\zhacode.configurator\plugins\zhacode.configurator;$(zspacecoreDir)/cpp/Depends/Armadillo;$(zspacecoreDir)/cpp/Depends;$(zspacecoreDir);$(zspacecoreDir)/cpp;$(zspacetoolsetsDir);$(zspacetoolsetsDir)/cpp;$(SolutionDir)cpp;$(zspacecoreDir)/cpp/Depends/alglib/cpp/src/;$(iglIncludeDir);$(iglBuildDir)\_deps\eigen-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 /bigobj /permissive- /external:W0 /external:Ic:/Users/Taizhong.Chen/source/repos/zViewerOV/_build/target-deps/usd/release/include /external:Ic:/Users/Taizhong.Chen/source/repos/zViewerOV/_build/target-deps/usd/release/include/boost /wd4244 /wd4305 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <SupportJustMyCode>false</SupportJustMyCode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>python310.lib;ar.lib;arch.lib;gf.lib;plug.lib;sdf.lib;tf.lib;usd.lib;vt.lib;usdGeom.lib;usdUtils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\_build\target-deps\carb_sdk_plugins\_build\windows-x86_64\release;..\..\..\_build\windows-x86_64\release\kit\plugins;..\..\..\_build\target-deps\usd\release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\..\..\_build\windows-x86_64\release\exts\zhacode.configurator\bin\zhacode.configurator.plugin.lib</ImportLibrary>
+      <AdditionalOptions>/Brepro /sourcelink:$(IntDir)sourcelink.json %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\extensions\zhacode.configurator\include\zhacode\configurator\IExampleUsdInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\extensions\zhacode.configurator\plugins\zhacode.configurator\ExampleUsdExtension.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\_repo\deps\repo_kit_tools\kit-template\.editorconfig" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
